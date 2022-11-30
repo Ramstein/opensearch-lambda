@@ -1,6 +1,6 @@
 const AWS = require('aws-sdk');
 
-var region = 'us-east-2';
+var region = 'us-east-1';
 var domain = process.env.DOMAIN_URL; // e.g. search-domain.region.es.amazonaws.com
 var index = 'marvel_movies';
 var api_type = '_search';

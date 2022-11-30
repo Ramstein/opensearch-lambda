@@ -1,0 +1,41 @@
+{
+    "rules": [
+      {
+        "rule-type": "selection",
+        "rule-id": "656075032",
+        "rule-name": "575099061",
+        "object-locator": {
+          "schema-name": "onlinecheckwriter",
+          "table-name": "users"
+        },
+        "rule-action": "include",
+        "filters": []
+      },
+      {
+        "rule-type": "transformation",
+        "rule-id": "655066328",
+        "rule-name": "652119180",
+        "rule-target": "column",
+        "object-locator": {
+          "schema-name": "onlinecheckwriter",
+          "table-name": "cheques",
+          "column-name": "cheque_issue_date"
+        },
+        "rule-action": "change-data-type",
+        "data-type": {
+          "type": "datetime"
+        }
+      },
+      {
+        "rule-type": "selection",
+        "rule-id": "575099061",
+        "rule-name": "575099061",
+        "object-locator": {
+          "schema-name": "onlinecheckwriter",
+          "table-name": "cheques"
+        },
+        "rule-action": "include",
+        "filters": []
+      }
+    ]
+  }
